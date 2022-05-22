@@ -14,6 +14,13 @@ body {
     font-weight: 300;
 }
 
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+
 /*  ================
         LAYOUT
     ================ */
@@ -49,7 +56,6 @@ header {
 
 main {
     width: 70%;
-    margin-right: 5%;
 }
 
 aside {
@@ -57,7 +63,13 @@ aside {
 }
 
 .featured-post {
+    padding-bottom: 2em;
     border-bottom: 1px solid;
+    margin-bottom: 2em;
+}
+
+.posts {
+    margin-bottom: 2em;
 }
 
 .post {
@@ -107,14 +119,6 @@ footer {
         TYPOGRAPHY
     ================ */
 
-.bold {
-    font-weight: 700;
-}
-
-.link {
-    color: #1792D2;
-}
-
 h1,
 h2,
 h3,
@@ -141,12 +145,21 @@ ul {
     padding: 0;
 }
 
-img {
-    width: 100%;
+strong {
+    font-weight: 700;
+}
+
+.link {
+    color: #1792D2;
+}
+
+.link:hover,
+.link:focus {
+    color: #143774;
 }
 
 .title h1 {
-    font-size: 2.625rem;
+    font-size: 2rem;
 }
 
 .title p {
@@ -157,14 +170,24 @@ img {
 }
 
 .date {
-    font-size: .775rem;
+    font-size: .7rem;
     font-family: 'Noto Sans', sans-serif;
+    margin: 2em 0;
 }
 
 .continue {
+    display: block;
     color: #1792D2;
     font-size: .875rem;
     font-weight: 700;
+    text-decoration: none;
+    /* margin-bottom: 1.5em; */
+}
+
+.continue:hover,
+.continue:focus {
+    text-decoration: underline;
+    color: #143774;
 }
 
 
@@ -220,6 +243,37 @@ img {
         margin: 1em;;
     }
 }
+
+@media (max-width: 780px) {
+    .container-main {
+        flex-direction: column;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    .post {
+        flex-direction: column;
+    }
+
+    .post-image {
+        width: 100%;
+    }
+
+    .post-text {
+        width: 100%;
+    }
+
+    .aside-posts h4 {
+        margin-top: 1em;
+    }
+}
+
 
 @media (max-width: 450px) {
     .nav-panel ul {
