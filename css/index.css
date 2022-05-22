@@ -62,10 +62,15 @@ aside {
     width: 25%;
 }
 
-.featured-post {
+.featured-post,
+.about-me-post {
     padding-bottom: 2em;
     border-bottom: 1px solid;
     margin-bottom: 2em;
+}
+
+.about-me-post {
+    border: none;
 }
 
 .posts {
@@ -188,6 +193,15 @@ strong {
 .continue:focus {
     text-decoration: underline;
     color: #143774;
+}
+
+.about-me-title {
+    margin-top: 2em;
+}
+
+.about-me-subtitle {
+    font-size: 1.3rem;
+    color: #1792D2;
 }
 
 
