@@ -89,7 +89,7 @@ aside {
 .aside-featured-post,
 .aside-posts {
     border: 1.25rem solid #EBEBEB;
-    padding: 1.5625rem;
+    padding: 1em;
 }
 
 .aside-featured-post {
@@ -99,10 +99,10 @@ aside {
 .aside-post {
     padding-bottom: 1em;
     margin-bottom: 1em;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid #707070;
 }
 
-.last {
+.aside-post:last-child {
     border: none;
     margin-bottom: 0;
 }
