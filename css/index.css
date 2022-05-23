@@ -1,10 +1,4 @@
-/* font-family: 'Lora', serif; (400)
-font-family: 'Noto Sans', sans-serif; (400)
-font-family: 'Ubuntu', sans-serif; (300, 700)*/
 
-/* * {
-    border: 1px solid magenta;
-} */
 
 body {
     margin: 0;
@@ -12,6 +6,7 @@ body {
     color: #707070;
     font-size: 1.125rem;
     font-weight: 300;
+    line-height: 1.6;
 }
 
 img {
@@ -117,7 +112,7 @@ footer {
     background-color: #143774;
     padding: 3.75rem 0;
     text-align: center;
-    color: #fff;
+    color: rgba(255, 255, 255, .65);
 }
 
 /*  ================
@@ -143,6 +138,7 @@ h3 {
     font-family: 'Ubuntu', sans-serif;
     font-weight: 700;
     margin-bottom: 1rem;
+    letter-spacing: 1px;
 }
 
 ul {
@@ -186,7 +182,7 @@ strong {
     font-size: .875rem;
     font-weight: 700;
     text-decoration: none;
-    /* margin-bottom: 1.5em; */
+    letter-spacing: 1px;
 }
 
 .continue:hover,
@@ -215,10 +211,12 @@ strong {
 }
 
 .nav-panel a {
+    font-family: 'Ubuntu', sans-serif;
     color: #717171;
     text-decoration: none;
     padding:  .25rem 0;
     font-weight: 700;
+    letter-spacing: 2px;
 }
 
 .nav-panel a:hover,
@@ -284,7 +282,7 @@ strong {
     }
 
     .aside-posts h4 {
-        margin-top: 1em;
+        line-height: 1.4;
     }
 }
 
